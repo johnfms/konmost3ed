@@ -1,0 +1,199 @@
+body {
+background: #FFDB15;
+font-family: 'Raleway', sans-serif;
+background-size: cover;
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+direction:rtl;
+}
+.sc{
+  text-align: center;
+}
+.sc h1{
+  color: #8a6fdf;
+  
+}
+.sc span {
+  color: #ff5765;
+}
+.sc img{
+  width:100px;
+  height:100px;
+  border-radius: 50px;
+}
+.form {
+background: #A8E10C;
+border: 2px solid #8A6FDF;
+color: #636363;
+width: 300px;
+border-radius: 4px;
+margin: 0 auto;
+padding: 20px 30px;
+height: 0px;
+overflow:hidden;
+animation-name:loginintro;
+animation-duration: 1s;
+animation-fill-mode: forwards;
+animation-delay: 0.25s;
+}
+#signupform{
+animation-name:signupintro;
+animation-duration: 1s;
+animation-fill-mode: forwards;
+animation-delay: 0.25s;
+}
+@keyframes loginintro {
+  0%{height: 0px;
+overflow:hidden;}
+100%{
+  height: 370px;
+overflow:visible;
+}
+}
+@keyframes loginoutro {
+  0%{
+height: 370px;
+overflow:visible;
+}
+100%{
+  height: 0px;
+  overflow:hidden;
+  width:400px;
+}
+}
+
+@keyframes signupintro {
+  0%{height: 0px;
+overflow:hidden;}
+100%{
+  height: 1100px;
+overflow:visible;
+}
+}
+
+@keyframes signupoutro {
+  0%{  height: 1100px;
+    overflow:visible;}
+100%{height: 0px;
+  overflow:hidden;
+}
+}
+
+.form h2 {
+text-transform: uppercase;
+font-weight: normal;
+font-size: 1.5em;
+text-align: center;
+margin: 0;
+padding: 10px 0px;
+border-bottom: 1px solid #8A6FDF;
+}
+form p {
+margin: 25px 0 10px 0 ;
+position: relative;
+}
+
+.email label,
+.password label,
+.input {
+display: block;
+width: 100%;
+padding-bottom: 10px;
+box-sizing: border-box;
+}
+/* Submit button Styling */
+[type="submit"] {
+  display: block;
+    color: #5a3b5d;
+    font-weight: bold;
+    background: #FFDB15;
+    box-shadow: 5px 5px 0 0 #ff5765, inset 4px 4px 0 0 #ffdb15;
+    border: 2px solid #5a3b5d;
+    border-radius: 3px;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+    transition: background .3s;
+}
+[type="submit"]:hover {
+  background: #ff5765;
+    box-shadow: 5px 5px 0 0 #ffdb15, inset 4px 4px 0 0 #ff5765;
+}
+
+[type="password"],
+[type="email"] {
+padding: 20px;
+}
+[type="password"]:focus,
+[type="email"]:focus {
+outline: none;
+}
+/*styling sign up*/
+.signupbtn{
+  display: block;
+  color: #5a3b5d;
+  font-weight: bold;
+  background: #FFDB15;
+  box-shadow: 5px 5px 0 0 #ff5765, inset 4px 4px 0 0 #ffdb15;
+  border: 2px solid #5a3b5d;
+  border-radius: 3px;
+  padding: 10px;
+  width: 75%;
+  margin: 0 auto;
+  transition: background .3s;
+}
+.signupbtn:hover{
+  background: #ff5765;
+  box-shadow: 5px 5px 0 0 #ffdb15, inset 4px 4px 0 0 #ff5765;
+}
+
+/* Styling the input */
+.input {
+font-size: .85em;
+background: #ffffff;
+border: 1px solid #8A6FDF;
+height: 40px;
+transition: border-color 0.4s, box-shadow 1s;
+}
+.input:active,
+.input:focus {
+border: 1px solid #5a3b5d;
+box-shadow: 4px 4px 0 #8A6FDF;
+}
+.input{
+  margin-bottom: 5px;
+}
+hr{
+  width:75% ;
+  color:#8A6FDF;
+}
+.form2{width:400px;}
+.year{
+  width:auto;
+}
+.input:focus ,
+textarea:focus{
+outline: none;
+}
+.form div{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.form div label{
+margin:0px;
+margin-left:1px;
+}
+[type="date"]{
+width:auto;
+}
+
+@media only screen and (max-width: 600px) {
+    #signupform,.form2{
+        transform: scale(0.7);
+    }
+    
+}
